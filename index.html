@@ -1,0 +1,381 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+            initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    <!-- <link rel="stylesheet" href="PAGES/about.html"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+ 
+    <title>Restaurant Website</title>
+
+    <style>
+/* embeded style sheet */
+
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	padding: 0;
+}
+
+.nav-flex-row li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 115px 15px;
+}
+
+.nav-flex-row li a {
+	font-family: 'Big Shoulders Text', cursive;
+	color: rgba(14, 13, 13, 0.986);
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 40000;
+}
+.nav-flex-row li a:hover{
+	background: #5e5950;
+	transition: 1.9s;
+    
+}
+
+.section-intro {
+	height: 820px;
+	background-image: url(IMAGES/BG.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-intro h1 {
+	text-align: center;
+	color:rgb(7, 7, 7);
+	font-size: 2.5em;
+	font-weight: 99;
+	font-family: 'Lobster', cursive;
+}
+
+.section-intro header {
+	display: flex;
+	flex: 4;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-to-book-wrapper {
+	flex: 1;
+}
+
+.about-section {
+	display: flex;
+	align-items: center;
+	background-color: beige;
+	padding: 50px 30px;
+}
+
+.link-to-book {
+	color: #111010;
+	display: block;
+	border: 3px solid #ee0707;
+	padding: 5px 10px;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+a.link-to-book:hover {
+	background-color: #ffffff;
+	color: #95999e;
+	text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	background-color:blanchedalmond;
+
+}
+
+
+/* .carousel-inner {
+	height: 700px;
+}  */
+
+.row-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 30px 20px;
+}
+
+.btn.btn-primary {
+	font-family: 'Big Shoulders Text', cursive;
+	color: #ffffff;
+	background-color: #95999e;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	border: 0;
+}
+
+.btn.btn-primary:hover {
+	background-color: #747474;
+}
+.opening-time,
+.contact-address {
+	flex: 1;
+	margin: 30px 20px;
+	font-size: 1.2em;
+}
+
+.form-group p {
+	font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+	display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+	.section-intro {
+		height: 500px;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 20px;
+	}
+
+	/* .carousel-inner {
+		height: auto;
+	} */
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.section-intro {
+		height: 300px;
+	}
+
+	.about-section {
+		padding: 30px;
+	}
+
+	.section-intro h1 {
+		font-size: 2em;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 15px;
+	}
+
+	/* .carousel-inner {
+		height: auto;
+	} */
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row-flex h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.form-group p {
+		font-size: 15px;
+	}
+
+	.opening-time p span,
+	.contact-address p span {
+		font-size: 15px;
+		text-align: center;
+	}
+
+}
+
+        .foot{
+            background-color: bisque;
+            border: 2px;
+            background-size: cover;
+           display: flex;
+           font-family: 'Playball', cursive;
+justify-content: center;
+border-style: inset;
+
+        }
+    </style>
+
+    
+
+
+</head>
+ 
+<body>
+ 
+    <!-- navbar  -->
+    <nav>
+        <ul class="nav-flex-row">
+            <li class="nav-item">
+                <a href="PAGES/about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="PAGES/reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+                <a href="PAGES/menu.html">Menu</a>
+            </li>
+           
+        </ul>
+    </nav>
+    <section class="section-intro">
+        <header>
+            <h1> Welcome To Neha's <i> "Mirchi And Mime"  </i>Restaurant
+                </h1>
+        </header>
+        <div class="link-to-book-wrapper">
+            <a class="link-to-book"
+                href="#reservations">Book a table</a>
+        </div>
+    </section>
+ 
+    <section class="about-section">
+        <article>
+            <h3>
+                <b>Why This Restaurant </b>
+            </h3>
+ 
+             
+<p>
+           <li>
+            <b>Tasty Food</b>
+            Invariably the food is tasty and well prepared. The fare is appropriate for the price point and market it’s aimed at. It’s essential 
+            that patrons feel they’ve had a good, enjoyable meal.
+           </li>
+           <li> <b>Range of Beverages</b>
+            A successful restaurant offers a good range of beverages that cater for different tastes. Although more complex to organize, it certainly pleases customers who want variety. Good restaurants stock popular cordials, wines,
+             spirits and beers and avoid cheaper brands of dubious quality. </li>
+            </p>
+            <li>
+                <b> Good Service</b>
+                Waitrons know their jobs, are efficient and able to advise customers on the best choices. Food is served with minimal delay, and after the 
+                meal patrons don’t have to struggle to get their bill.
+               </li>
+               <li> <b>Hospitable Atmosphere</b>
+                The atmosphere is relaxed and friendly. If music is played, it’s appropriate and the volume not so loud that customers cannot talk. Staff 
+                is trained to avoid distracting behaviour and making unnecessary noise.. </li>
+                <li> <b>Reasonable Cost</b>
+                    Restaurants have different price points, but the golden rule is that customers should feel that 
+                    the cost of their meal was fair and reasonable, even in high-end establishments. Avoid overcharging.. </li>
+                </p>
+
+        </article>
+    </section>
+ 
+    
+    
+    <div class="container">
+        <div class="row-flex">
+            <div class="flex-column-form">
+                <h3>
+                    Make a booking
+                </h3>
+                <form class="media-centered">
+                    <div class="form-group">
+                         
+<p>
+                            Please leave your number we will
+                            call to make a reservation
+                        </p>
+ 
+                         
+                        <input type="name" class="form-control"
+                            id="exampleInputName1"
+                            aria-describedby="nameHelp"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control"
+                            id="exampleInputphoneNumber1"
+                            placeholder="Enter your phone number">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="opening-time">
+                <h3>
+                    Opening times
+                </h3>
+                 
+<p>
+                    <span>Monday—Thursday: 08:00 — 22:00</span>
+                    <span>Friday—Saturday: 09:00 — 23:00 </span>
+                    <span>Sunday: 10:00 — 17:00</span>
+                </p>
+ 
+            </div>
+            <div class="contact-address">
+                <h3>
+                    Contact
+                </h3>
+                 
+<p>
+                    <span>000000000000</span>
+                    <span>Deepatoli Ranchi</span>
+                    <span>Jharkhand India 834001</span>
+                </p>
+ 
+            </div>
+        </div>
+    </div>
+ <footer>
+<div class="foot">
+2021 &copy; All Rights Reserved || Page designed by Neha Pandey
+</div>  
+ </footer>
+
+ </body>
+ 
+</html>
